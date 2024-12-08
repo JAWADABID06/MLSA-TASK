@@ -24,7 +24,7 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a frontend web-developer studying at University of AJK. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a Developer with deep knowledge of HTML CSS AND JS with React as front end and also work in C# as my backend language with SQL Server as my database cruently fresh graduat from University of AJK. I enjoy creating unique and simplistic user interfaces and working apps in creative ways.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
