@@ -1,10 +1,10 @@
 /**
  * Portfolio component
  *
- * Highlights some of your creations. These can be designs, websites,
- * open source contributions, articles you've written, and more.
+ * Highlights some of  your creations. These can be designs, websites,
+ * open source contributions, articles you've written and more.
  *
- * This is a great area for you to continually add to and refine
+ * This is a great area for you to to continually add to and refine
  * as you continue to learn and create.
  */
 
@@ -17,7 +17,7 @@ import React from "react";
  * updating below imageAltText to string that represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a photo you
- * can freely use on your site.
+ * freely use on your site.
  */
 import image from "../images/design-desk.jpeg";
 
@@ -26,59 +26,33 @@ const imageAltText = "desktop with books and laptop";
 /**
  * Project list
  *
- * An array of objects that will be used to display your project
- * links section. Below is a sample; update it to reflect links you'd like to highlight.
+ * An array of objects that will be used to display for your project
+ * links section. Below is a sample, update to reflect links you'd like to highlight.
  */
 const projectList = [
   {
-    title: "Mantra Clone",
-    description: "A meditation app with guided sessions, daily affirmations, and progress tracking.",
-    url: "https://github.com/yourusername/mantra-clone",
+    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    description:
+      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
+    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
   },
   {
-    title: "Little Lemon Clone",
-    description: "A food ordering app featuring restaurant menus, online orders, and admin dashboards.",
-    url: "https://github.com/yourusername/little-lemon-clone",
+    title: "Web Development for Beginners",
+    description:
+      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
+    url: "https://github.com/microsoft/web-dev-for-beginners",
   },
   {
-    title: "E-Wallet Application",
-    description: "An app to manage virtual wallets, transactions, and analytics securely.",
-    url: "https://github.com/yourusername/e-wallet-app",
+    title: "My Resume Site",
+    description:
+      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
   {
-    title: "Expense Tracker",
-    description: "A tool to track daily, weekly, and monthly expenses with charts and CSV export.",
-    url: "https://github.com/yourusername/expense-tracker",
-  },
-  {
-    title: "Blogging Platform",
-    description: "A platform for users to post blogs, comment, and follow other users.",
-    url: "https://github.com/yourusername/blogging-platform",
-  },
-  {
-    title: "Attendance Management System",
-    description: "An app for marking attendance, viewing reports, and notifying admins.",
-    url: "https://github.com/yourusername/attendance-management",
-  },
-  {
-    title: "Online Course Platform",
-    description: "A platform for enrolling in courses, completing modules, and earning certifications.",
-    url: "https://github.com/yourusername/online-course-platform",
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal website to showcase projects, resume, and contact details.",
-    url: "https://github.com/yourusername/portfolio-website",
-  },
-  {
-    title: "Event Management App",
-    description: "An app to create and manage events with RSVP and ticketing features.",
-    url: "https://github.com/yourusername/event-management-app",
-  },
-  {
-    title: "Inventory Management System",
-    description: "A system to manage stock levels, track products, and generate sales reports.",
-    url: "https://github.com/yourusername/inventory-management-system",
+    title: "GitHub Codespaces and github.dev",
+    description:
+      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
+    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
   },
 ];
 
@@ -86,55 +60,21 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          paddingTop: "3rem",
-        }}
-      >
-        <div
-          style={{
-            flexBasis: "40%",
-            alignSelf: "center",
-            margin: "0 auto",
-          }}
-        >
+      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
+        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "auto", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "cover" }}
             alt={imageAltText}
           />
         </div>
-        <div
-          className="container"
-          style={{
-            flexBasis: "55%",
-            margin: "0 auto",
-          }}
-        >
+        <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title} style={{ marginBottom: "1.5rem" }}>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  fontWeight: "bold",
-                }}
-              >
-                <h3 style={{ marginBottom: "0.5rem" }}>{project.title}</h3>
+            <div className="box" key={project.title}>
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
-              <p
-                className="small"
-                style={{ margin: "0", color: "#555", fontSize: "1rem" }}
-              >
-                {project.description}
-              </p>
+              <p className="small">{project.description}</p>
             </div>
           ))}
         </div>
