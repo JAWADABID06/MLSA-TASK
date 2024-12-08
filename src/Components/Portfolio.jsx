@@ -1,7 +1,7 @@
 /**
  * Portfolio component
  *
- * Highlights some of  your creations. These can be designs, websites,
+ * Highlights some of your creations. These can be designs, websites,
  * open source contributions, articles you've written and more.
  *
  * This is a great area for you to to continually add to and refine
@@ -31,28 +31,54 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "Mantra Clone",
+    description: "A meditation app with guided sessions, daily affirmations, and progress tracking.",
+    url: "https://github.com/yourusername/mantra-clone",
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "Little Lemon Clone",
+    description: "A food ordering app featuring restaurant menus, online orders, and admin dashboards.",
+    url: "https://github.com/yourusername/little-lemon-clone",
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: "E-Wallet Application",
+    description: "An app to manage virtual wallets, transactions, and analytics securely.",
+    url: "https://github.com/yourusername/e-wallet-app",
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "Expense Tracker",
+    description: "A tool to track daily, weekly, and monthly expenses with charts and CSV export.",
+    url: "https://github.com/yourusername/expense-tracker",
+  },
+  {
+    title: "Blogging Platform",
+    description: "A platform for users to post blogs, comment, and follow other users.",
+    url: "https://github.com/yourusername/blogging-platform",
+  },
+  {
+    title: "Attendance Management System",
+    description: "An app for marking attendance, viewing reports, and notifying admins.",
+    url: "https://github.com/yourusername/attendance-management",
+  },
+  {
+    title: "Online Course Platform",
+    description: "A platform for enrolling in courses, completing modules, and earning certifications.",
+    url: "https://github.com/yourusername/online-course-platform",
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal website to showcase projects, resume, and contact details.",
+    url: "https://github.com/yourusername/portfolio-website",
+  },
+  {
+    title: "Event Management App",
+    description: "An app to create and manage events with RSVP and ticketing features.",
+    url: "https://github.com/yourusername/event-management-app",
+  },
+  {
+    title: "Inventory Management System",
+    description: "A system to manage stock levels, track products, and generate sales reports.",
+    url: "https://github.com/yourusername/inventory-management-system",
   },
 ];
 
